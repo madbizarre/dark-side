@@ -4,6 +4,8 @@
 -------------------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Comfortaa&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+/* VARIABLES
+-------------------------------------------------- */
 /* COMMON TAGS AND CLASES
 -------------------------------------------------- */
 body {
@@ -37,11 +39,12 @@ hr {
   border-radius: 0;
   font-family: 'Open Sans';
   font-size: larger;
-  background-color: #81d8d0; }
+  background-color: #CF212F; }
   .btn-rectangle-lg:hover, .btn-rectangle-sm:hover {
-    background-color: #a8e4df; }
-  .btn-rectangle-lg.gold:hover, .btn-rectangle-sm.gold:hover {
-    background-color: #ffdd33; }
+    background-color: #e1424f; }
+  .btn-rectangle-lg.color2:hover, .btn-rectangle-sm.color2:hover {
+    background-color: #052e55;
+    color: #fdebda; }
 
 .btn-rectangle-lg {
   padding: 15px 64px; }
@@ -58,8 +61,9 @@ hr {
 .white {
   background-color: white; }
 
-.gold {
-  background-color: #ffd400; }
+.color2 {
+  background-color: #021425;
+  color: #fdebda; }
 
 .bold {
   background: none;
@@ -86,12 +90,12 @@ hr {
   margin-top: 51px;
   width: 100%;
   height: 500px;
-  background: url(../img/intro2.jpg) no-repeat center center;
+  background: url(../img/intro4.jpg) no-repeat 50% 40%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #FDF4C6; }
+  color: #FFC107; }
   .intro h1 {
     padding-top: 150px; }
 

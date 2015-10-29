@@ -42,6 +42,13 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 //font-family: 'Open Sans';
 
+/* VARIABLES
+-------------------------------------------------- */
+$color1: #CF212F;
+$color2: #021425;
+$color3: #FFC107;
+
+
 /* COMMON TAGS AND CLASES
 -------------------------------------------------- */
 
@@ -81,13 +88,15 @@ hr {
   @include border-radius(0);
   font-family: 'Open Sans';
   font-size: larger;
-  background-color: #81d8d0;
+  background-color: $color1 ;
   &:hover {
-    background-color: lighten(#81d8d0, 10%);
+    background-color: lighten($color1 , 10%);
 
   }
-  &.gold:hover {
-    background-color: lighten(#ffd400, 10%);
+  &.color2:hover {
+    background-color: lighten($color2, 10%);
+    color: invert($color2);
+
   }
 }
 
@@ -109,8 +118,9 @@ hr {
 .white {
   background-color: white;
 }
-.gold {
-  background-color: #ffd400;
+.color2 {
+  background-color: $color2;
+  color: invert($color2);
 }
 .bold {
   background: none;
@@ -141,9 +151,9 @@ hr {
   margin-top: 51px;
   width: 100%;
   height: 500px;
-  background: url(../img/intro2.jpg) no-repeat center center;
+  background: url(../img/intro4.jpg) no-repeat 50% 40%;
   @include background-size(cover);
-  color: #FDF4C6;
+  color: $color3;
   h1 {
     padding-top: 150px;
   }
