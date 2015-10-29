@@ -155,6 +155,7 @@ hr {
   @include background-size(cover);
   color: $color3;
   h1 {
+    padding-bottom: 10px;
     padding-top: 150px;
   }
 }

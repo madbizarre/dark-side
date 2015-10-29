@@ -97,6 +97,7 @@ hr {
   background-size: cover;
   color: #FFC107; }
   .intro h1 {
+    padding-bottom: 10px;
     padding-top: 150px; }
 
 /* MARKETING CONTENT
