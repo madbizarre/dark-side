@@ -44,7 +44,7 @@
 
 /* VARIABLES
 -------------------------------------------------- */
-$color1: #CF212F;
+$color1: #e1424f;
 $color2: #021425;
 $color3: #FFC107;
 
@@ -90,7 +90,7 @@ hr {
   font-size: larger;
   background-color: $color1 ;
   &:hover {
-    background-color: lighten($color1 , 10%);
+    background-color: darken($color1 , 10%);
 
   }
   &.color2:hover {
