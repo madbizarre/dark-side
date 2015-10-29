@@ -44,7 +44,7 @@
 
 /* VARIABLES
 -------------------------------------------------- */
-$color1: #e1424f;
+$color1: #CF212F;
 $color2: #021425;
 $color3: #FFC107;
 
@@ -90,7 +90,7 @@ hr {
   font-size: larger;
   background-color: $color1 ;
   &:hover {
-    background-color: darken($color1 , 10%);
+    background-color: lighten($color1 , 10%);
 
   }
   &.color2:hover {
@@ -151,12 +151,13 @@ hr {
   margin-top: 51px;
   width: 100%;
   height: 500px;
-  background: url(../img/intro4.jpg) no-repeat 50% 40%;
+  background: url(../img/intro2.jpg) no-repeat 50% 40%;
   @include background-size(cover);
   color: $color3;
   h1 {
-    padding-top: 10px;
-    padding-bottom: 150px;
+    //padding-top: 10px;
+    //padding-bottom: 150px;
+    padding-top: 150px;
   }
 }
 

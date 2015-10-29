@@ -39,9 +39,9 @@ hr {
   border-radius: 0;
   font-family: 'Open Sans';
   font-size: larger;
-  background-color: #e1424f; }
+  background-color: #CF212F; }
   .btn-rectangle-lg:hover, .btn-rectangle-sm:hover {
-    background-color: #cf212f; }
+    background-color: #e1424f; }
   .btn-rectangle-lg.color2:hover, .btn-rectangle-sm.color2:hover {
     background-color: #052e55;
     color: #fdebda; }
@@ -90,15 +90,14 @@ hr {
   margin-top: 51px;
   width: 100%;
   height: 500px;
-  background: url(../img/intro4.jpg) no-repeat 50% 40%;
+  background: url(../img/intro2.jpg) no-repeat 50% 40%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: #FFC107; }
   .intro h1 {
-    padding-top: 10px;
-    padding-bottom: 150px; }
+    padding-top: 150px; }
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
