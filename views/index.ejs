@@ -385,6 +385,9 @@
 
     <p>© <%= new Date().getFullYear() %> Dark Side <a href="javascript:void(0)">Privacy</a> · <a
                 href="javascript:void(0)">Terms</a></p>
+    <p>ololo</p>
+    <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+
 </footer>
 
 <!-- MODAL -->
@@ -399,23 +402,22 @@
             <div class="modal-body text-center">
                 <form id="contact" action="" method="post">
                     <fieldset>
-                        <input type="text" id="name" placeholder="Имя*" tabindex="1" autofocus required/>
+                        <input type="text" id="inputName" placeholder="Имя*" tabindex="1" autofocus required/>
                     </fieldset>
                     <fieldset>
-                        <input type="email" id="email" placeholder="Email*" tabindex="2" required/>
+                        <input type="email" id="inputEmail" placeholder="Email" tabindex="2"/>
                     </fieldset>
                     <fieldset>
-                        <input type="text" id="vk" placeholder="Id Вконтакте*" tabindex="3" required/>
+                        <input type="text" id="inputVk" placeholder="Id Вконтакте" tabindex="3"/>
                     </fieldset>
                     <fieldset>
-                        <input type="tel" id="tel" placeholder="Телефон*" tabindex="4"
+                        <input type="tel" id="inputTel" placeholder="Телефон*" tabindex="4"
                                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required/>
                     </fieldset>
                     <fieldset>
-                        <textarea placeholder="Сообщение*" tabindex="5" required></textarea>
+                        <textarea id="inputComment" placeholder="Сообщение*" tabindex="5" required></textarea>
                     </fieldset>
-                    <hr/>
-                    <button type="button" class="btn btn-rectangle-lg">Отправить</button>
+                    <button type="submit" id="inputSubmit" class="btn btn-rectangle-lg">Отправить</button>
                 </form>
             </div>
         </div>
@@ -424,7 +426,6 @@
     <!-- /.modal-dialog -->
 </div>
 <!-- /.modal -->
-
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

@@ -97,12 +97,11 @@ hr {
   background-color: $color1 ;
   &:hover {
     background-color: lighten($color1 , 10%);
-
+    @include transition(background 0.3s ease-in-out);
   }
   &.color2:hover {
     background-color: lighten($color2, 10%);
     color: invert($color2);
-
   }
 }
 
@@ -168,7 +167,7 @@ hr {
     position: absolute;
   }
   .intro-bg {
-    z-index: 99;
+    z-index: 98;
     background: url(../img/intro2.jpg) no-repeat 50% 55%;
     @include background-size(cover);
     -webkit-filter: blur(5px);
@@ -178,7 +177,7 @@ hr {
     overflow: hidden;
   }
   .intro-container{
-    z-index: 100;
+    z-index: 99;
     overflow: hidden;
   }
   h1 {
@@ -186,7 +185,7 @@ hr {
     //padding-bottom: 150px;
     padding-top: 150px;
     text-shadow: 2px 2px 10px $color1, 0 0 5rem $color2;
-    z-index: 100;
+    z-index: 99;
   }
 }
 
@@ -265,14 +264,33 @@ hr {
     &:hover {
       @include transition(border-color 0.3s ease-in-out);
     }
+    &:focus {
+      outline: 0;
+      border: 1px solid #999;
+    }
   }
   textarea {
     height: 100px;
     max-width: 100%;
     resize: none;
   }
-
+  ::-webkit-input-placeholder {
+    color: #888;
+  }
+  :-moz-placeholder {
+    color: #888;
+  }
+  ::-moz-placeholder {
+    color: #888;
+  }
+  :-ms-input-placeholder {
+    color: #888;
+  }
+  .alert {
+    padding: 15px;
+  }
 }
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
