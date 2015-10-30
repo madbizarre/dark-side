@@ -43,6 +43,8 @@ hr {
     background-color: #e1424f;
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
+    -ms-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
     transition: background 0.3s ease-in-out; }
   .btn-rectangle-lg.color2:hover, .btn-rectangle-sm.color2:hover {
     background-color: #052e55;
@@ -153,6 +155,21 @@ hr {
 #tariffs hr {
   width: 66.66667%; }
 
+/* FOOTER
+-------------------------------------------------- */
+.icon-list li a img:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
 /* CONTACT MODAL
 -------------------------------------------------- */
 .contact {
@@ -179,6 +196,8 @@ hr {
     .contact input:hover, .contact textarea:hover {
       -webkit-transition: border-color 0.3s ease-in-out;
       -moz-transition: border-color 0.3s ease-in-out;
+      -ms-transition: border-color 0.3s ease-in-out;
+      -o-transition: border-color 0.3s ease-in-out;
       transition: border-color 0.3s ease-in-out; }
     .contact input:focus, .contact textarea:focus {
       outline: 0;

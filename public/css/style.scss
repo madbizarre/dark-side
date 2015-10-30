@@ -12,11 +12,12 @@
   background: url($url) no-repeat $move-x $move-y;
 }
 
-@mixin transform($value) {
-  transform: scale($value);
+@mixin scale($value) {
   -webkit-transform: scale($value);
-  -o-transform: scale($value);
   -moz-transform: scale($value);
+  -ms-transform: scale($value);
+  -o-transform: scale($value);
+  transform: scale($value);
 }
 
 @mixin background-size($value) {
@@ -37,6 +38,8 @@
 @mixin transition($value){
   -webkit-transition: $value;
   -moz-transition: $value;
+  -ms-transition: $value;
+  -o-transition: $value;
   transition: $value;
 }
 
@@ -236,6 +239,22 @@ hr {
   }
   hr {
     width: 66.666666%
+  }
+}
+
+/* FOOTER
+-------------------------------------------------- */
+.icon-list {
+  li {
+    a{
+      img {
+        &:hover {
+          opacity: 0.8;
+          @include scale(1.2);
+          @include transition(all 0.3s ease-in-out);
+        }
+      }
+    }
   }
 }
 
