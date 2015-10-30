@@ -18,8 +18,6 @@ section {
   padding: 50px 0; }
   section h1 {
     padding-bottom: 25px; }
-  section:last-child {
-    padding-bottom: 0; }
 
 footer {
   padding-top: 50px; }
