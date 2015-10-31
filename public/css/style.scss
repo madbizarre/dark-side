@@ -67,6 +67,19 @@ body {
   font-family: 'Open Sans';
 }
 
+main {
+  .col-lg-4 {
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-weight: normal;
+  }
+  .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
 section {
   padding: 50px 0;
   h1 {
@@ -194,35 +207,18 @@ hr {
   }
 }
 
-/* MARKETING CONTENT
+/* MAIN CONTENT
 -------------------------------------------------- */
 
-.marketing {
-  .col-lg-4 {
-    margin-bottom: 20px;
-  }
-  h2 {
-    font-weight: normal;
-  }
-  .col-lg-4 p {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-}
-
-/* FEAUTURETTE CONTENT
--------------------------------------------------- */
-.featurette-divider {
+.divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
 
-.featurette-heading {
+.heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
 }
-
-
 
 #principles {
   .media {
@@ -329,14 +325,14 @@ hr {
     }
   }
 
-  .featurette-heading {
+  .heading {
     font-size: 50px;
   }
 }
 
 @media (min-width: 992px) {
-  .featurette-heading {
-    //margin-top: 120px;
+  .heading {
+
   }
 }
 

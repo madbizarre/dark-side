@@ -26,4 +26,8 @@ Vk: ${req.body.vk || 'не указан'}
     });
 });
 
+router.get('/*', function(req, res){
+    res.redirect('/');
+});
+
 module.exports = router;

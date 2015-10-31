@@ -13,6 +13,14 @@ body {
   background-color: #ededed;
   font-family: 'Open Sans'; }
 
+main .col-lg-4 {
+  margin-bottom: 20px; }
+main h2 {
+  font-weight: normal; }
+main .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px; }
+
 section {
   padding: 50px 0; }
   section h1 {
@@ -124,23 +132,13 @@ hr {
     text-shadow: 2px 2px 10px #CF212F, 0 0 5rem #021425;
     z-index: 99; }
 
-/* MARKETING CONTENT
+/* MAIN CONTENT
 -------------------------------------------------- */
-.marketing .col-lg-4 {
-  margin-bottom: 20px; }
-.marketing h2 {
-  font-weight: normal; }
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px; }
-
-/* FEAUTURETTE CONTENT
--------------------------------------------------- */
-.featurette-divider {
+.divider {
   margin: 80px 0;
   /* Space out the Bootstrap <hr> more */ }
 
-.featurette-heading {
+.heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px; }
@@ -228,7 +226,7 @@ hr {
     padding-right: 0;
     padding-left: 0; }
 
-  .featurette-heading {
+  .heading {
     font-size: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
