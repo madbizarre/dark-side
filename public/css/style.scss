@@ -274,9 +274,6 @@ hr {
     }
     &:nth-child(even) {
       background: #ccc;
-      &:before {
-        right: 1rem;
-      }
     }
     &:before {
       content: counter(li);
@@ -310,24 +307,33 @@ hr {
     }
     &:nth-child(even) {
       background: #ccc;
-      &:before {
+      /*&:before {
+      }*/
+      &:after {
         right: 1rem;
+        content: counter(li);
+        counter-increment: li;
+        position: absolute;
+        font-size: 12rem;
+        font-family: arial;
+        opacity: 0.1;
+        top: 3.75rem;
       }
     }
     &:nth-child(odd) {
       &:before {
+        content: counter(li);
+        counter-increment: li;
+        position: absolute;
+        font-size: 12rem;
+        font-family: arial;
+        opacity: 0.1;
+        top: 3.75rem;
         left: 1rem;
       }
     }
-    &:before {
-      content: counter(li);
-      counter-increment: li;
-      position: absolute;
-      font-size: 12rem;
-      font-family: arial;
-      opacity: 0.1;
-      top: 3.75rem;
-    }
+
+
   }
 }
 
