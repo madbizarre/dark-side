@@ -96,6 +96,10 @@ hr {
     background-color: #021425;
     padding-right: 15px;
     padding-left: 15px; }
+  .navbar-wrapper .navbar-toggle {
+    border: none; }
+    .navbar-wrapper .navbar-toggle:focus {
+      background-color: transparent; }
 
 /* INTRO
 -------------------------------------------------- */
@@ -134,6 +138,13 @@ hr {
 
 /* MAIN CONTENT
 -------------------------------------------------- */
+#team h1, #tariffs h1 {
+  padding-bottom: 0; }
+#team hr, #tariffs hr {
+  width: 20%;
+  border-top: 1px solid #DDDDDD;
+  padding-bottom: 25px; }
+
 .divider {
   margin: 80px 0;
   /* Space out the Bootstrap <hr> more */ }
@@ -143,6 +154,8 @@ hr {
   line-height: 1;
   letter-spacing: -1px; }
 
+#principles span {
+  color: black; }
 #principles .media {
   height: 50px; }
 
@@ -150,8 +163,6 @@ hr {
   border: none; }
 #tariffs .hr-wrapper {
   padding: 0 33.333333%; }
-#tariffs hr {
-  width: 66.66667%; }
 
 /* FOOTER
 -------------------------------------------------- */
@@ -167,6 +178,9 @@ hr {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
+
+.footer-contact-list {
+  color: #f5f5f5; }
 
 /* CONTACT MODAL
 -------------------------------------------------- */
