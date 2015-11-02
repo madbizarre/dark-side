@@ -25,6 +25,8 @@ section {
   padding: 50px 0; }
   section h1 {
     padding-bottom: 25px; }
+    section h1:first-child {
+      padding-bottom: 0; }
 
 footer {
   background-color: #021425;
@@ -59,10 +61,10 @@ hr {
     color: #fdebda; }
 
 .btn-rectangle-lg {
-  padding: 15px 64px; }
+  padding: 15px 56px; }
 
 .btn-rectangle-sm {
-  padding: 7px 32px; }
+  padding: 7px 28px; }
 
 .replies {
   border: none; }
@@ -107,7 +109,12 @@ hr {
   margin-top: 51px;
   width: 100%;
   height: 500px;
-  color: #FFC107; }
+  color: #FFC107;
+  background: url(../img/intro2.jpg) no-repeat 50% 55%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
   .intro .intro-bg, .intro .intro-container {
     left: 0;
     top: 51px;
@@ -127,7 +134,8 @@ hr {
     -moz-filter: blur(5px);
     filter: blur(5px);
     filter: url(../img/blur.svg#blur);
-    overflow: hidden; }
+    overflow: hidden;
+    padding: 10px 10px; }
   .intro .intro-container {
     z-index: 99;
     overflow: hidden; }
@@ -138,16 +146,13 @@ hr {
 
 /* MAIN CONTENT
 -------------------------------------------------- */
-#team h1, #tariffs h1 {
-  padding-bottom: 0; }
-#team hr, #tariffs hr {
+.divider {
+  margin: 80px 0; }
+
+.subtitle-divider {
   width: 20%;
   border-top: 1px solid #DDDDDD;
   padding-bottom: 25px; }
-
-.divider {
-  margin: 80px 0;
-  /* Space out the Bootstrap <hr> more */ }
 
 .heading {
   font-weight: 300;
@@ -163,6 +168,33 @@ hr {
   border: none; }
 #tariffs .hr-wrapper {
   padding: 0 33.333333%; }
+
+.list-work {
+  padding: 0;
+  list-style: none;
+  counter-reset: li; }
+  .list-work li {
+    line-height: 30px;
+    color: #777;
+    margin-bottom: 25px;
+    padding: 20px 20px 20px 94px;
+    box-sizing: border-box;
+    min-height: 105px;
+    position: relative; }
+    .list-work li p {
+      padding-top: 2rem;
+      font-size: 3rem; }
+    .list-work li:nth-child(even) {
+      background: #ccc; }
+  .list-work > li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    font-size: 12rem;
+    font-family: arial;
+    opacity: 0.1;
+    left: -0.05rem;
+    top: 3.75rem; }
 
 /* FOOTER
 -------------------------------------------------- */
@@ -181,6 +213,13 @@ hr {
 
 .footer-contact-list {
   color: #f5f5f5; }
+
+.footer-menu-header {
+  font-size: 2rem; }
+
+.footer-menu {
+  color: #337ab7;
+  font-size: 1.5rem; }
 
 /* CONTACT MODAL
 -------------------------------------------------- */

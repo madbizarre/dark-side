@@ -35,7 +35,7 @@
   box-shadow: $value;
 }
 
-@mixin transition($value){
+@mixin transition($value) {
   -webkit-transition: $value;
   -moz-transition: $value;
   -ms-transition: $value;
@@ -56,7 +56,6 @@
 $color1: #CF212F;
 $color2: #021425;
 $color3: #FFC107;
-
 
 /* COMMON TAGS AND CLASES
 -------------------------------------------------- */
@@ -84,10 +83,10 @@ section {
   padding: 50px 0;
   h1 {
     padding-bottom: 25px;
+    &:first-child {
+      padding-bottom: 0;
+    }
   }
-  //&:last-child {
-  //  padding-bottom: 0;
-  //}
 }
 
 footer {
@@ -111,9 +110,9 @@ hr {
   @include border-radius(0);
   font-family: 'Open Sans';
   font-size: larger;
-  background-color: $color1 ;
+  background-color: $color1;
   &:hover {
-    background-color: lighten($color1 , 10%);
+    background-color: lighten($color1, 10%);
     @include transition(background 0.3s ease-in-out);
   }
   &.color2:hover {
@@ -123,11 +122,11 @@ hr {
 }
 
 .btn-rectangle-lg {
-  padding: 15px 64px;
+  padding: 15px 56px;
 }
 
 .btn-rectangle-sm {
-  padding: 7px 32px;
+  padding: 7px 28px;
 }
 
 .replies {
@@ -137,17 +136,21 @@ hr {
 .gray {
   background-color: rgb(237, 237, 237);
 }
+
 .white {
   background-color: white;
 }
+
 .color2 {
   background-color: $color2;
   color: invert($color2);
 }
+
 .bold {
   background: none;
   font-weight: bold;
 }
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -181,6 +184,8 @@ hr {
   width: 100%;
   height: 500px;
   color: $color3;
+  background: url(../img/intro2.jpg) no-repeat 50% 55%;
+  @include background-size(cover);
   .intro-bg, .intro-container {
     left: 0;
     top: 51px;
@@ -199,8 +204,9 @@ hr {
     filter: blur(5px);
     filter: url(../img/blur.svg#blur);
     overflow: hidden;
+    padding: 10px 10px;
   }
-  .intro-container{
+  .intro-container {
     z-index: 99;
     overflow: hidden;
   }
@@ -214,19 +220,14 @@ hr {
 /* MAIN CONTENT
 -------------------------------------------------- */
 
-#team, #tariffs {
-  h1 {
-    padding-bottom: 0;
-  }
-  hr {
-      width: 20%;
-      border-top: 1px solid #DDDDDD;
-      padding-bottom: 25px;
-  }
+.divider {
+  margin: 80px 0;
 }
 
-.divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+.subtitle-divider {
+  width: 20%;
+  border-top: 1px solid #DDDDDD;
+  padding-bottom: 25px;
 }
 
 .heading {
@@ -253,11 +254,47 @@ hr {
   }
 }
 
+
+.list-work {
+  padding: 0;
+  list-style: none;
+  counter-reset: li;
+
+  li {
+    line-height: 30px;
+    color: #777;
+    margin-bottom: 25px;
+    padding: 20px 20px 20px 94px;
+    box-sizing: border-box;
+    min-height: 105px;
+    position: relative;
+    p {
+      padding-top: 2rem;
+      font-size: 3rem;
+    }
+    &:nth-child(even) {
+      background: #ccc;
+    }
+  }
+  & > li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    font-size: 12rem;
+    font-family: arial;
+    opacity: 0.1;
+    left: -0.05rem;
+    top: 3.75rem;
+  }
+}
+
+
+
 /* FOOTER
 -------------------------------------------------- */
 .icon-list {
   li {
-    a{
+    a {
       img {
         &:hover {
           opacity: 0.8;
@@ -271,6 +308,15 @@ hr {
 
 .footer-contact-list {
   color: #f5f5f5;
+}
+
+.footer-menu-header {
+  font-size: 2rem;
+}
+
+.footer-menu {
+  color: #337ab7;
+  font-size: 1.5rem;
 }
 
 /* CONTACT MODAL
@@ -327,7 +373,6 @@ hr {
   }
 }
 
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -354,4 +399,3 @@ hr {
 
   }
 }
-
