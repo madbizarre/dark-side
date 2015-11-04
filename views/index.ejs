@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-<head> <% var title = title || 'Join The Dark Side'%>
+<head>
+    <% var title = title || 'Join The Dark Side' %>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
           content="Продвижение товаров и услуг в интернете, создание landing page, адаптивная и кроссбраузерная верстка">
     <meta name="keywords" content="seo продвижение сайта яндекс.директ директ adwords директолог direct">
-    <title><%=title%></title>
+    <title><%= title %></title>
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
     <!--[if lt IE 9]>
@@ -46,7 +47,8 @@
 <header class="intro text-center white" id="intro" role="presentation">
     <div class="intro-bg"></div>
     <div class="intro-container">
-        <h1 class="text-uppercase vcenter"><%=title%></h1>
+        <h1 class="text-uppercase vcenter"><%= title %></h1>
+
         <div class="container text-center">
             <button class="btn btn-rectangle-lg" role="button">Свяжитесь с нами!</button>
         </div>
@@ -54,8 +56,175 @@
 </header>
 
 <main role="main">
-    <section class="white" id="team">
+
+    <section class="white">
         <div class="container text-center">
+            <h1 class="text-uppercase ">Обращайся, если Тебе нужны:</h1>
+            <hr class="subtitle-divider"/>
+            <ol class="list-work">
+                <li>
+                    <p>Контекстная реклама Яндекс.Директ и Google Adwords<br/>
+                        Создание, реанимация, управление<br/>
+                        Работаем в любой нише в любой с стране.<br/>
+                        Фокусируемая на ROI<br/>
+                        <span class="price">от 7 000 руб.</span>
+                </li>
+                <li>
+                    <p>Создание быстрых сайтов с уникальным дизайном.<br/>
+                        Landing page, многостраничные сайты, интернет магазины.<br/>
+                        SEO в подарок!<br/>
+                        <span class="price">от 5 000 руб.</span>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="container" id="work">
+        <h1 class="text-uppercase text-center">Схема работы</h1>
+        <hr class="subtitle-divider"/>
+        <ol class="list-work2 text-center">
+            <li>
+                <p>Обсуждаем все вопросы по заказу (встреча, скайп, телефон)</p>
+            </li>
+            <li>
+                <p>Заполняете brief на услугу оплачиваете 30%</p>
+            </li>
+            <li>
+                <p>Утверждаете работу и оплачиваете остаток</p>
+            </li>
+            <li>
+                <p>Дальнейшие консультации бесплатно</p>
+            </li>
+            <p>(схему можно подстроить под Вас при необходимости)</p>
+        </ol>
+    </section>
+
+    <section class="white" id="principles">
+        <div class="container">
+            <h1 class="text-uppercase text-center">Наши принципы</h1>
+            <hr class="subtitle-divider"/>
+            <ul class="list-unstyled principles-list">
+                <li>Комплексный подход во всем</li>
+                <li>Отказ от любых шаблонов</li>
+                <li>Работа на доверии</li>
+                <li>Гарантия возврата денег</li>
+                <li>Объясним и проконсультируем по смежным вопросам</li>
+                <li>Лучшая реклама - довольный клиент</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container" id="reviews">
+        <h1 class="text-uppercase text-center">Отзывы</h1>
+        <hr class="subtitle-divider"/>
+
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-circle img-responsive" src="img/characters/male2.png"
+                         alt="Довольный клиент!" width="128px" height="128px">
+
+                    <div class="caption">
+                        <h3>Энакин Скайуокер</h3>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-circle img-responsive" src="img/characters/female.png"
+                         alt="Довольный клиент!" width="128px" height="128px">
+
+                    <div class="caption">
+                        <h3>Слай Мур</h3>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-circle img-responsive" src="img/characters/male.png"
+                         alt="Довольный клиент!" width="128px" height="128px">
+
+                    <div class="caption">
+                        <h3>Сенатор Палпатин</h3>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <button class="btn btn-rectangle-lg" role="button">Свяжитесь с нами!</button>
+        </div>
+    </section>
+
+    <section class="white" id="tariffs">
+        <div class="container">
+            <h1 class="text-uppercase text-center">Тарифные планы</h1>
+            <hr class="subtitle-divider"/>
+
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <div class="thumbnail">
+                        <img src="" alt=""/>
+
+                        <div class="caption">
+                            <h3 class="text-uppercase">Старт</h3>
+                            <small>Для начинащих проектов <br/><strong>(до 6 месяцев)</strong></small>
+                            <br/>
+
+                            <p>Идеален для узких ниш и пробы ниши. Количество ключевых фраз и уникальных объявлений до
+                                25.
+                                Настройка РК Яндекс Директ, Установка Я.Метрики (+ВебВизор), 6 дня для настройки
+                                максимум,
+                                сопровождение РКЯ 5 дней </p><br/>
+                            <a href="javascript:void(0)" class="btn btn-rectangle-sm color2" role="button">Заказать</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 text-center ">
+                    <div class="thumbnail gray" style="border:none">
+                        <img src="" alt=""/>
+
+                        <div class="caption">
+                            <h3 class="text-uppercase">Оптима</h3>
+                            <small>Для устоявшихся проектов <br/><strong>(от 6 месяцев до 2 лет)</strong></small>
+                            <br/>
+
+                            <p>Количество ключевых фраз и уникальных объявлений до 100. Настройка РК Яндекс Директ,
+                                Установка Я.Метрики (+ВебВизор), 5 дней для настройки максимум, сопровождение РКЯ 10
+                                дней. </p><br/>
+                            <a href="javascript:void(0)" class="btn btn-rectangle-sm color2" role="button">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="thumbnail">
+                        <img src="" alt=""/>
+
+                        <div class="caption">
+                            <h3 class="text-uppercase">Макси</h3>
+                            <small>Для успешных проектов <br/><strong>(больше двух лет)</strong></small>
+                            <br/>
+
+                            <p>Создание Рекламной Кампании. Количество ключевых фраз и уникальных объявлений до 200.
+                                Установка Я.Метрики (+ВебВизор), Создание и настройка Google AdWords, Помощь в
+                                увеличении
+                                конверсии. Создание лэндинга. SEO в подарок. Сопровождение РКЯ месяц.</p><br/>
+                            <a href="javascript:void(0)" class="btn btn-rectangle-sm color2" role="button">Заказать</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container text-center" id="team">
             <h1 class="text-uppercase ">Наша команда</h1>
             <hr class="subtitle-divider"/>
             <ul class="list-inline ">
@@ -67,174 +236,13 @@
                     <h4>Дизайн, верстка, HTML5/CSS3</h4>
                 </li>
                 <li class="col-xs-12 col-sm-6">
-                    <img class="img-circle" src="img/icons/Darth-Vader2.png" alt="Generic placeholder image"
+                    <img class="img-circle" src="img/characters/azamat.jpg" alt="Generic placeholder image"
                          width="128px" height="128px">
 
                     <h2 class="text-capitalize">Азамат Салаватов</h2>
                     <h4>Стратегия, директолог, СМО</h4>
                 </li>
             </ul>
-        </div>
-    </section>
-
-    <section class="container" id="work">
-        <h1 class="text-uppercase text-center">Как мы работаем</h1>
-        <hr class="subtitle-divider"/>
-        <ol class="list-work">
-            <li>
-                <p>Вы заполняете бриф на рекламную кампанию и лэндинг</p>
-            </li>
-            <li>
-                <p>Мы встречаемся и обсуждаем детали, если нужно</p>
-            </li>
-            <li>
-                <p>Мы реализуем Ваши желания</p>
-            </li>
-            <li>
-                <p>Вы утверждаете работу</p>
-            </li>
-            <li>
-                <p>Profit!</p>
-            </li>
-        </ol>
-        <hr class="divider"/>
-        <ol class="list-work2 text-center">
-            <li>
-                <p>Вы заполняете бриф на рекламную кампанию и лэндинг</p>
-            </li>
-            <li>
-                <p>Мы встречаемся и обсуждаем детали, если нужно</p>
-            </li>
-            <li>
-                <p>Мы реализуем Ваши желания</p>
-            </li>
-            <li>
-                <p>Вы утверждаете работу</p>
-            </li>
-            <li>
-                <p>Profit!</p>
-            </li>
-        </ol>
-    </section>
-
-    <section class="white" id="principles">
-        <div class="container">
-            <h1 class="text-uppercase text-center">Наши принципы</h1>
-            <hr class="subtitle-divider"/>
-            <ul class="list-unstyled principles-list">
-                <li>Комплексный подход</li>
-                <li>Утром стулья - вечером деньги</li>
-                <li>Полный отказ от любых шаблонов</li>
-                <li>Лучшая реклама - довольный клиент</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="container" id="tariffs">
-        <h1 class="text-uppercase text-center">Тарифные планы</h1>
-        <hr class="subtitle-divider"/>
-
-        <div class="row">
-            <div class="col-lg-4 text-center">
-                <div class="thumbnail">
-                    <img src="" alt=""/>
-
-                    <div class="caption">
-                        <h3 class="text-uppercase">Старт</h3>
-                        <small>Для начинащих проектов <br/><strong>(до 6 месяцев)</strong></small>
-                        <br/>
-
-                        <p>Идеален для узких ниш и пробы ниши. Количество ключевых фраз и уникальных объявлений до 25.
-                            Настройка РК Яндекс Директ, Установка Я.Метрики (+ВебВизор), 6 дня для настройки максимум,
-                            сопровождение РКЯ 5 дней </p><br/>
-                        <a href="javascript:void(0)" class="btn btn-rectangle-sm color2" role="button">Заказать</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-lg-4 text-center ">
-                <div class="thumbnail gray" style="border:none">
-                    <img src="" alt=""/>
-
-                    <div class="caption">
-                        <h3 class="text-uppercase">Оптима</h3>
-                        <small>Для устоявшихся проектов <br/><strong>(от 6 месяцев до 2 лет)</strong></small>
-                        <br/>
-
-                        <p>Количество ключевых фраз и уникальных объявлений до 100. Настройка РК Яндекс Директ,
-                            Установка Я.Метрики (+ВебВизор), 5 дней для настройки максимум, сопровождение РКЯ 10
-                            дней. </p><br/>
-                        <a href="javascript:void(0)" class="btn btn-rectangle-sm color2" role="button">Заказать</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center">
-                <div class="thumbnail">
-                    <img src="" alt=""/>
-
-                    <div class="caption">
-                        <h3 class="text-uppercase">Макси</h3>
-                        <small>Для успешных проектов <br/><strong>(больше двух лет)</strong></small>
-                        <br/>
-
-                        <p>Создание Рекламной Кампании. Количество ключевых фраз и уникальных объявлений до 200.
-                            Установка Я.Метрики (+ВебВизор), Создание и настройка Google AdWords, Помощь в увеличении
-                            конверсии. Создание лэндинга. SEO в подарок. Сопровождение РКЯ месяц.</p><br/>
-                        <a href="javascript:void(0)" class="btn btn-rectangle-sm color2" role="button">Заказать</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="white" id="reviews">
-        <div class="container">
-            <h1 class="text-uppercase text-center">Отзывы</h1>
-            <hr class="subtitle-divider"/>
-
-            <div class="row">
-                <div class="col-lg-4 text-center">
-                    <div class="thumbnail">
-                        <img class="img-circle img-responsive" src="img/characters/male2.png"
-                             alt="Довольный клиент!" width="128px" height="128px">
-
-                        <div class="caption">
-                            <h3>Энакин Скайуокер</h3>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <div class="thumbnail">
-                        <img class="img-circle img-responsive" src="img/characters/female.png"
-                             alt="Довольный клиент!" width="128px" height="128px">
-
-                        <div class="caption">
-                            <h3>Слай Мур</h3>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <div class="thumbnail">
-                        <img class="img-circle img-responsive" src="img/characters/male.png"
-                             alt="Довольный клиент!" width="128px" height="128px">
-
-                        <div class="caption">
-                            <h3>Сенатор Палпатин</h3>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container text-center">
-            <button class="btn btn-rectangle-lg" role="button">Свяжитесь с нами!</button>
-        </div>
     </section>
 </main>
 <!-- /.container -->
@@ -274,9 +282,9 @@
             </li>
         </ul>
         <div class="col-xs-12 col-md-3 text-center container">
-<!--
-            <p class="col-xs-12"><a href="#">Back to top</a></p>
--->
+            <!--
+                        <p class="col-xs-12"><a href="#">Back to top</a></p>
+            -->
             <ul class="list-inline icon-list col-xs-12">
                 <li class="col-xs-offset-2 col-xs-4 col-sm-offset-9 col-sm-1 col-md-offset-0 col-md-6">
                     <a href="https://vk.com/joindarksidee">
@@ -291,7 +299,7 @@
             </ul>
         </div>
         <div class="col-xs-12 col-lg-12">
-            <p>© <%= new Date().getFullYear() %> <%=title%> <!--<a href="javascript:void(0)">Privacy</a> · <a
+            <p>© <%= new Date().getFullYear() %> <%= title %> <!--<a href="javascript:void(0)">Privacy</a> · <a
                         href="javascript:void(0)">Terms</a>--></p>
         </div>
     </div>
@@ -329,7 +337,9 @@
                         <label for="inputComment"></label>
                         <textarea id="inputComment" placeholder="Сообщение*" tabindex="5" required></textarea>
                     </fieldset>
-                    <button type="submit" id="inputSubmit" data-loading-text="Отправляется" class="btn btn-rectangle-lg">Отправить</button>
+                    <button type="submit" id="inputSubmit" data-loading-text="Отправляется"
+                            class="btn btn-rectangle-lg">Отправить
+                    </button>
                 </form>
             </div>
         </div>
