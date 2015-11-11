@@ -17,8 +17,8 @@ Vk: ${req.body.vk || 'не указан'}
 Комментарий: ${req.body.comment}`;
     transporter.sendMail({
         from: `${mail.from} <${mail.user}>`,
-        to: mail.to,
-        subject: `Заявка с сайта: ${req.hostname}`,
+        to: mail.to.split(', '),
+        subject: `Заявка с сайта: joindarkside.ru`,
         text: text
     }, function (err){
         if (err) return next(err);

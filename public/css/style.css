@@ -41,6 +41,9 @@ hr {
   vertical-align: middle;
   float: none; }
 
+.btn:focus, .btn:active {
+  outline: none !important; }
+
 .btn-rectangle-lg, .btn-rectangle-sm {
   color: black;
   -webkit-border-radius: 0;
@@ -333,10 +336,10 @@ hr {
     color: #6da768;
     padding-right: 0.5rem; }
   .principles-list li:hover {
-    -webkit-transform: translateX(5rem) scale(1.1);
-    -moz-transform: translateX(5rem) scale(1.1);
-    -ms-transform: translateX(5rem) scale(1.1);
-    -o-transform: translateX(5rem) scale(1.1);
-    transform: translateX(5rem) scale(1.1); }
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); }
 
 /*# sourceMappingURL=style.css.map */

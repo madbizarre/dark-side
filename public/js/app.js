@@ -16,9 +16,6 @@
                 closeAlert();
                 $contact.before('<div class="alert alert-success" role="alert"><strong>Ваша заявка отправлена!</strong></div>');
                 $contact.css('display', 'none');
-                setTimeout(function (){
-                    $contactModal.modal('hide');
-                }, 1000);
             },
             ajaxError = function (err){
                 $btnSubmit.button('reset');

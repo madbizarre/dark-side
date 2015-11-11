@@ -113,6 +113,10 @@ hr {
   float: none;
 }
 
+.btn:focus,.btn:active {
+  outline: none !important;
+}
+
 .btn-rectangle-lg, .btn-rectangle-sm {
   color: black;
   @include border-radius(0);
@@ -470,7 +474,7 @@ hr {
       padding-right: 0.5rem;
     }
     &:hover {
-      @include transform(translateX(5rem) scale(1.1));
+      @include transform(scale(1.1));
     }
   }
 }
