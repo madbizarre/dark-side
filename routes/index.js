@@ -10,11 +10,10 @@ router.get('/', function (req, res, next){
 
 router.post('/mail', function (req, res, next){
     let mail = config.get('mail'),
-        text = `Имя: ${req.body.name}
+        text = `Имя: ${req.body.name || 'не указано'}
 Email: ${req.body.email || 'не указан'}
-Vk: ${req.body.vk || 'не указан'}
 Телефон: ${req.body.tel}
-Комментарий: ${req.body.comment}`;
+Комментарий: ${req.body.comment || 'не указан'}`;
     transporter.sendMail({
         from: `${mail.from} <${mail.user}>`,
         to: mail.to.split(', '),
