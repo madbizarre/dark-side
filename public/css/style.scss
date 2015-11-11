@@ -478,3 +478,11 @@ hr {
     }
   }
 }
+
+@media (max-width: 767px){
+  .list-work, .list-work2{
+    li {
+      padding: 20px 10px;
+    }
+  }
+}

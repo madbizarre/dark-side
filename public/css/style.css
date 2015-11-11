@@ -342,4 +342,8 @@ hr {
     -o-transform: scale(1.1);
     transform: scale(1.1); }
 
+@media (max-width: 767px) {
+  .list-work li, .list-work2 li {
+    padding: 20px 10px; } }
+
 /*# sourceMappingURL=style.css.map */

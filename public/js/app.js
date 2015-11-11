@@ -1,5 +1,4 @@
-;
-(function (){
+;(function (){
     $(document).ready(function (){
         var $btnSubmit = $('button[type=submit]'),
             $contact = $('#contact'),
