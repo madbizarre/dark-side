@@ -12,7 +12,7 @@
                 }
             },
             ajaxSuccess = function (data){
-                yaCounter33530108.reachGoal('sendData');
+                yaCounter33537228.reachGoal('sendData');
                 $btnSubmit.button('reset');
                 closeAlert();
                 $contactTitle.html('Спасибо, заявка отправлена');
