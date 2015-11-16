@@ -11,7 +11,7 @@
     <title><%= title %></title>
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="css/style.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="icon" href="/favicon.ico"/>
     <!--[if lt IE 9]>
@@ -49,8 +49,17 @@
 <header class="intro text-center white" id="intro" role="presentation">
     <div class="intro-bg"></div>
     <div class="intro-container">
-        <h1 class="text-uppercase vcenter"><%= title %></h1>
-
+        <div class="banner">
+            <div class="line">
+                <span>Join</span>
+            </div>
+            <div class="line">
+                <span>Dark</span>
+            </div>
+            <div class="line">
+                <span>Side</span>
+            </div>
+        </div>
         <div class="container text-center">
             <button class="btn btn-rectangle-lg" role="button">Свяжитесь с нами!</button>
         </div>
@@ -103,14 +112,12 @@
                     <div class="thumbnail">
                         <div class="caption">
                             <h3 class="text-uppercase">Старт</h3>
-                            <small>Для начинащих проектов <br/><strong>(до 6 месяцев)</strong></small>
+                            <small>Для начинащих проектов</small>
                             <br/>
 
-                            <p>Идеален для узких ниш и пробы ниши. Количество ключевых фраз и уникальных объявлений до
-                                25.
-                                Настройка РК Яндекс Директ, Установка Я.Метрики (+ВебВизор), 6 дня для настройки
-                                максимум,
-                                сопровождение РКЯ 5 дней </p><br/>
+                            <p>Создание и настройка или реанимация рекламной кампании Яндекс Директ или Google Adwords
+                                Количество ключевых фраз и уникальных объявлений до 45.
+                                Сопровождение 7 дней в подарок! </p><br/>
                             <a href="javascript:void(0)" class="btn btn-rectangle-sm" role="button">Заказать</a>
                         </div>
                     </div>
@@ -120,12 +127,13 @@
                     <div class="thumbnail gray" style="border:none">
                         <div class="caption">
                             <h3 class="text-uppercase">Оптима</h3>
-                            <small>Для устоявшихся проектов <br/><strong>(от 6 месяцев до 2 лет)</strong></small>
+                            <small>Для среднего бизнеса</small>
                             <br/>
 
-                            <p>Количество ключевых фраз и уникальных объявлений до 100. Настройка РК Яндекс Директ,
-                                Установка Я.Метрики (+ВебВизор), 5 дней для настройки максимум, сопровождение РКЯ 10
-                                дней. </p><br/>
+                            <p>Количество ключевых фраз и уникальных объявлений до 75.
+                                Настройка РК Яндекс Директ или Google Adwords
+                                Сопровождение и Установка Я.Метрики (+ВебВизор),
+                                Лэндинг страничка и 2 недели сопровождения в подарок!</p><br/>
                             <a href="javascript:void(0)" class="btn btn-rectangle-sm" role="button">Заказать</a>
                         </div>
                     </div>
@@ -134,13 +142,14 @@
                     <div class="thumbnail">
                         <div class="caption">
                             <h3 class="text-uppercase">Макси</h3>
-                            <small>Для успешных проектов <br/><strong>(больше двух лет)</strong></small>
+                            <small>Для крупных проектов</small>
                             <br/>
 
-                            <p>Создание Рекламной Кампании. Количество ключевых фраз и уникальных объявлений до 200.
-                                Установка Я.Метрики (+ВебВизор), Создание и настройка Google AdWords, Помощь в
-                                увеличении
-                                конверсии. Создание лэндинга. SEO в подарок. Сопровождение РКЯ месяц.</p><br/>
+                            <p>Количество ключевых фраз и уникальных объявлений до 75.
+                                Настройка РК Яндекс Директ и Google Adwords
+                                Сопровождение и Установка Я.Метрики (+ВебВизор)
+                                Месяц сопровождения в подарок.
+                                Лэндинг страница с персональным дизайном в подарок!</p><br/>
                             <a href="javascript:void(0)" class="btn btn-rectangle-sm" role="button">Заказать</a>
                         </div>
                     </div>
@@ -158,7 +167,10 @@
                 <p>Обсуждаем все вопросы по заказу (встреча, скайп, телефон)</p>
             </li>
             <li>
-                <p>Заполняете brief на услугу оплачиваете 30%</p>
+                <p>Заполняете brief на услугу и оплачиваете 30%</p>
+            </li>
+            <li>
+                <p>Выполняем работу в полном обьеме и утверждаем ее с Вами</p>
             </li>
             <li>
                 <p>Утверждаете работу и оплачиваете остаток</p>
@@ -166,8 +178,8 @@
             <li>
                 <p>Дальнейшие консультации бесплатно</p>
             </li>
-            <p>(схему можно подстроить под Вас при необходимости)</p>
         </ol>
+        <p>(схему можно подстроить под Вас при необходимости)</p>
     </section>
 
     <section class="white" id="team">
@@ -229,17 +241,9 @@
             </li>
         </ul>
         <div class="col-xs-12 col-md-3 text-center container">
-            <ul class="list-inline icon-list col-xs-12">
-                <li class="col-xs-offset-2 col-xs-4 col-sm-offset-9 col-sm-1 col-md-offset-0 col-md-6">
-                    <a href="https://vk.com/joindarksidee">
-                        <img src="img/social-icons/vk.png" alt="Вконтакте" height="50px"/>
-                    </a>
-                </li>
-                <li class="col-xs-4 col-sm-2">
-                    <a href="http://facebook.com/">
-                        <img src="img/social-icons/facebook.png" alt="Facebook" height="50px"/>
-                    </a>
-                </li>
+            <ul class="list-inline icon-list col-xs-12 social-icons icon-circle icon-zoom">
+                <li> <a href="#"><i class="fa fa-vk"></i></a></li>
+                <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
             </ul>
         </div>
         <div class="col-xs-12 col-lg-12">
@@ -290,7 +294,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter33537228 = new Ya.Metrika({ id:33537228, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/33537228" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter33537228 = new Ya.Metrika({ id:33537228, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/33537228" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <script src="js/main.min.js"></script>
 </body>
