@@ -9,7 +9,9 @@
     <meta name="keywords" content="seo продвижение сайта яндекс.директ директ adwords директолог direct">
     <meta property="og:image" content="http://joindarkside.ru/img/favicon.png"/>
     <title><%= title %></title>
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+          integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+          crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="favicon.ico"/>
@@ -20,8 +22,8 @@
     <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#navbar">
-<div class="navbar-wrapper" id="navbar">
-    <nav class="navbar navbar-inverse nav-tabs navbar-static-top" role="tablist">
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-inverse nav-tabs navbar-static-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -61,12 +63,12 @@
             </div>
         </div>
         <div class="container text-center">
-            <button class="btn btn-rectangle-lg" role="button">Свяжитесь с нами!</button>
+            <button class="btn btn-rectangle-lg">Свяжитесь с нами!</button>
         </div>
     </div>
 </header>
 
-<main role="main">
+<main>
     <section class="white">
         <div class="container text-center">
             <h1 class="text-uppercase">Обращайся, если Тебе нужны:</h1>
@@ -189,14 +191,14 @@
             <ul class="list-inline ">
                 <li class=" col-xs-12 col-sm-6">
                     <img class="img-circle" src="img/characters/andrey.jpg" alt="Andrey Pavlov"
-                         width="128px" height="128px"/>
+                         width="128" height="128"/>
 
                     <h2 class="text-capitalize">Павлов Андрей</h2>
                     <h4>Дизайн, верстка, HTML5/CSS3</h4>
                 </li>
                 <li class="col-xs-12 col-sm-6">
                     <img class="img-circle" src="img/characters/azamat.jpg" alt="Azamat Salavatov"
-                         width="128px" height="128px">
+                         width="128" height="128">
 
                     <h2 class="text-capitalize">Азамат Салаватов</h2>
                     <h4>Стратегия, директолог, СМО</h4>
@@ -205,8 +207,6 @@
         </div>
     </section>
 </main>
-<!-- /.container -->
-<!-- FOOTER -->
 
 <footer>
     <div class="container">
@@ -252,7 +252,6 @@
     </div>
 </footer>
 
-<!-- MODAL -->
 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal">
     <div class="modal-dialog">
         <div class="modal-content contact">
@@ -262,7 +261,7 @@
                 <h4 class="modal-title text-center contact-title">Оставьте заявку</h4>
             </div>
             <div class="modal-body text-center">
-                <form id="contact" action="" method="post">
+                <form id="contact" action="#" method="post">
                     <fieldset>
                         <label for="inputName"></label>
                         <input type="text" id="inputName" placeholder="Имя" tabindex="1" autofocus/>
@@ -286,14 +285,13 @@
                 </form>
             </div>
         </div>
-        <!-- /.modal-content -->
     </div>
-    <!-- /.modal-dialog -->
 </div>
-<!-- /.modal -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+        integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+        crossorigin="anonymous"></script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter33537228 = new Ya.Metrika({ id:33537228, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/33537228" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
