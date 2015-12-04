@@ -391,17 +391,32 @@ footer {
     .intro .intro-bg, .intro .intro-container {
       max-height: 800px; } }
 .pricing {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: center;
   justify-content: center;
   width: 100%;
   margin: 0 auto 3em; }
   .pricing__item {
     position: relative;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
     flex-direction: column;
     align-items: stretch;
     text-align: center;
+    -webkit-flex: 0 1 330px;
+    -moz-flex: 0 1 330px;
+    -ms-flex: 0 1 330px;
+    -o-flex: 0 1 330px;
     flex: 0 1 330px;
     font-family: 'Roboto', sans-serif;
     padding: 2em 4em;
@@ -527,6 +542,10 @@ footer {
   .pricing__item {
     max-width: none;
     width: 100%;
+    -webkit-flex: none;
+    -moz-flex: none;
+    -ms-flex: none;
+    -o-flex: none;
     flex: none;
     border: none !important;
     opacity: 1 !important; } }

@@ -12,6 +12,30 @@
   background: url($url) no-repeat $move-x $move-y;
 }
 
+@mixin flex($value) {
+  -webkit-flex: $value;
+  -moz-flex: $value;
+  -ms-flex: $value;
+  -o-flex: $value;
+  flex: $value;
+}
+
+@mixin flex-wrap($value) {
+  -webkit-flex-wrap: $value;
+  -moz-flex-wrap: $value;
+  -ms-flex-wrap: $value;
+  -o-flex-wrap: $value;
+  flex-wrap: $value;
+}
+
+@mixin flex-direction($value) {
+  -webkit-flex-direction: $value;
+  -moz-flex-direction: $value;
+  -ms-flex-direction: $value;
+  -o-flex-direction: $value;
+  flex-direction: $value;
+}
+
 @mixin scale($value) {
   -webkit-transform: scale($value);
   -moz-transform: scale($value);
@@ -512,18 +536,21 @@ footer {
 }
 
 .pricing {
+  display: -webkit-flex;
   display: flex;
-  flex-wrap: wrap;
+  @include flex-wrap(wrap);
+  -webkit-justify-content: center;
   justify-content: center;
   width: 100%;
   margin: 0 auto 3em;
   &__item {
     position: relative;
+    display: -webkit-flex;
     display: flex;
-    flex-direction: column;
+    @include flex-direction(column);
     align-items: stretch;
     text-align: center;
-    flex: 0 1 330px;
+    @include flex(0 1 330px);
     font-family: 'Roboto', sans-serif;
     padding: 2em 4em;
     cursor: default;
@@ -661,7 +688,7 @@ footer {
   .pricing__item {
     max-width: none;
     width: 100%;
-    flex: none;
+    @include flex(none);
     border: none !important;
     opacity: 1 !important;
   }
