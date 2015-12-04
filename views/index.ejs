@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru-RU" prefix="og: http://ogp.me/ns#">
-<head><% var title = title || 'Join Dark Side' %>
+<head>
+    <% var title = title || 'Join Dark Side' %>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,15 +24,13 @@
 </head>
 <body data-spy="scroll" data-target="#navbar">
 <div class="navbar-wrapper">
-    <nav class="navbar navbar-inverse nav-tabs navbar-static-top">
+    <nav class="navbar nav-tabs navbar-static-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                         data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <i class="fa fa-bars fa-2x"></i>
                 </button>
                 <a class="navbar-brand text-capitalize" href="#"><%= title %></a>
             </div>
@@ -51,47 +50,145 @@
 <header class="intro text-center white" id="intro" role="presentation">
     <div class="intro-bg"></div>
     <div class="intro-container">
-        <div class="banner">
-            <div class="line">
-                <span>Join</span>
-            </div>
-            <div class="line">
-                <span>Dark</span>
-            </div>
-            <div class="line">
-                <span>Side</span>
-            </div>
-        </div>
         <div class="container text-center">
-            <button class="btn btn-rectangle-lg">Свяжитесь с нами!</button>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="banner">
+                        <div class="line">
+                            <span>Join</span>
+                        </div>
+                        <div class="line">
+                            <span>Dark</span>
+                        </div>
+                        <div class="line">
+                            <span>Side</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-xs col-sm-6">
+                    <p class="title">
+                        Уже рекламируетесь в Яндекс&nbsp;Директ?<br/>
+                        Отправьте заявку на бесплатный аудит вашей кампании прямо&nbsp;сейчас<br/>
+                        и получите список из 7&nbsp;практических рекомендаций по&nbsp;улучшению!
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-default-lg">Свяжитесь с нами!</button>
         </div>
     </div>
 </header>
 
 <main>
-    <section class="white">
+    <section class="white" id="adv-tariffs">
         <div class="container text-center">
             <h1 class="text-uppercase">Обращайся, если Тебе нужны:</h1>
             <hr class="subtitle-divider"/>
-            <ol class="list-work">
-                <li>
-                    <p>Контекстная реклама Яндекс.Директ и Google Adwords<br/>
-                        Создание, реанимация, управление<br/>
-                        Работаем в любой нише в любой стране.<br/>
-                        Фокусируемся на ROI<br/>
-                        <span class="price">от 7 000 руб.</span>
-                </li>
-                <li>
-                    <p>Создание быстрых сайтов с уникальным дизайном.<br/>
-                        Landing page, многостраничные сайты, интернет магазины.<br/>
-                        SEO в подарок!<br/>
-                        <span class="price">от 6 000 руб.</span>
-                </li>
-            </ol>
+        </div>
+        <div class="pricing pricing--rabten">
+            <div class="pricing__item">
+                <div class="icon"><i class="fa fa-google"></i></div>
+                <h3 class="pricing__title">Контекстная реклама Яндекс.Директ и Google&nbsp;Adwords</h3>
+
+                <div class="pricing__price">
+                        <span class="pricing__anim pricing__anim--1">
+								от 10 000<span class="pricing__currency"><i class="fa fa-rub fa-1"></i></span>
+                        </span>
+                </div>
+                <h4 class="pricing__sentence">Услуги</h4>
+                <ul class="pricing__feature-list">
+                    <li class="pricing__feature">Создание, реанимация и ведение</li>
+                    <li class="pricing__feature">Анализ целевой аудитории</li>
+                    <li class="pricing__feature">Изготовление баннеров</li>
+                    <li class="pricing__feature">Создание продающего текста обьявления</li>
+                    <li class="pricing__feature">Подбор ключевых слов</li>
+                </ul>
+                <h4 class="pricing__sentence">Результат</h4>
+                <ul class="pricing__feature-list">
+                    <li class="pricing__feature">Рост продаж</li>
+                    <li class="pricing__feature">Целевой траффик</li>
+                    <li class="pricing__feature">Лучшее предложение по эффективность/качество</li>
+                </ul>
+                <div class="pricing__button-wrapper">
+                    <button class="btn btn-default-lg pricing__action">Узнать подробности</button>
+                </div>
+            </div>
+            <div class="pricing__item">
+                <div class="icon"><i class="fa fa-desktop"></i></div>
+                <h3 class="pricing__title">Создание Сайтов</h3>
+
+                <div class="pricing__price">
+                        <span class="pricing__anim pricing__anim--1">
+								от 7 000<span class="pricing__currency"><i class="fa fa-rub fa-1"></i></span>
+                        </span>
+                </div>
+                <h4 class="pricing__sentence">Услуги</h4>
+                <ul class="pricing__feature-list">
+                    <li class="pricing__feature">Landing Page с уникальным дизайном</li>
+                    <li class="pricing__feature">Многостраничные сайты</li>
+                    <li class="pricing__feature">интернет магазины. SEO в подарок!</li>
+                </ul>
+                <div class="pricing__button-wrapper">
+                    <button class="btn btn-default-lg pricing__action">Узнать подробности</button>
+                </div>
+            </div>
+            <div class="pricing__item">
+                <div class="icon"><i class="fa fa-vk"></i></div>
+                <h3 class="pricing__title">Таргетированая реклама в ВКОНТАКТЕ</h3>
+
+                <div class="pricing__price">
+                        <span class="pricing__anim pricing__anim--1">
+								от 8 000<span class="pricing__currency"><i class="fa fa-rub fa-1"></i></span>
+                        </span>
+                </div>
+                <h4 class="pricing__sentence">Услуги</h4>
+                <ul class="pricing__feature-list">
+                    <li class="pricing__feature">Рекламные кампании с аудиторией от 1 млн человек</li>
+                    <li class="pricing__feature">Анализ целевой аудитории</li>
+                    <li class="pricing__feature">Рекламные баннеры</li>
+                    <li class="pricing__feature">Закупка рекламных мест</li>
+                    <li class="pricing__feature">Поиск новых площадок</li>
+                </ul>
+                <h4 class="pricing__sentence">Результат</h4>
+                <ul class="pricing__feature-list">
+                    <li class="pricing__feature">Рост продаж</li>
+                    <li class="pricing__feature">Целевой траффик</li>
+                </ul>
+                <div class="pricing__button-wrapper">
+                    <button class="btn btn-default-lg pricing__action">Узнать подробности</button>
+                </div>
+            </div>
+            <div class="pricing__item">
+                <div class="icon"><i class="fa fa-instagram"></i></div>
+                <h3 class="pricing__title">Продвижение в INSTAGRAM</h3>
+
+                <div class="pricing__price">
+                        <span class="pricing__anim pricing__anim--1">
+								от 15 000<span class="pricing__currency"><i class="fa fa-rub fa-1"></i></span>
+                        </span>
+                </div>
+                <h4 class="pricing__sentence">Услуги</h4>
+                <ul class="pricing__feature-list">
+                    <li class="pricing__feature">Определение местоположения целевой аудитории</li>
+                    <li class="pricing__feature">Анализ целевой аудитории</li>
+                    <li class="pricing__feature">Дизайн рекламного обьявления</li>
+                    <li class="pricing__feature">Создание вирусного контента</li>
+                    <li class="pricing__feature">Размещение постов</li>
+                </ul>
+                <h4 class="pricing__sentence">Результат</h4>
+                <ul class="pricing__feature-list">
+                    <li class="pricing__feature">Рост продаж</li>
+                    <li class="pricing__feature">Целевой траффик</li>
+                    <li class="pricing__feature">Лучшее предложение по эффективность/качество</li>
+                </ul>
+                <div class="pricing__button-wrapper">
+                    <button class="btn btn-default-lg pricing__action">Узнать подробности</button>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="container text-center" id="principles">
+    <section class="" id="principles">
+        <div class="container text-center">
             <h1 class="text-uppercase">Наши принципы</h1>
             <hr class="subtitle-divider"/>
             <ul class="list-unstyled principles-list">
@@ -102,6 +199,7 @@
                 <li>Объясним и проконсультируем по смежным вопросам</li>
                 <li>Лучшая реклама - довольный клиент</li>
             </ul>
+        </div>
     </section>
 
     <section class="white text-center" id="tariffs">
@@ -109,76 +207,81 @@
             <h1 class="text-uppercase">Тарифные планы</h1>
             <hr class="subtitle-divider"/>
 
-            <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h3 class="text-uppercase">Старт</h3>
-                            <small>Для начинащих проектов</small>
-                            <br/>
+            <div class="pricing pricing--rabten">
+                <div class="pricing__item">
+                    <div class="icon"><i class="fa fa-bicycle"></i></div>
+                    <h3 class="pricing__title">Старт</h3>
+                    <h4 class="pricing__sentence">Для начинащих проектов</h4>
 
-                            <p>Создание и настройка или реанимация рекламной кампании Яндекс Директ или Google Adwords
-                                Количество ключевых фраз и уникальных объявлений до 45.
-                                Сопровождение 7 дней в подарок! </p><br/><br class="hidden-xs hidden-sm"/>
-                            <a href="javascript:void(0)" class="btn btn-rectangle-sm" role="button">Заказать</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
-                    <div class="thumbnail gray">
-                        <div class="caption">
-                            <h3 class="text-uppercase">Оптима</h3>
-                            <small>Для среднего бизнеса</small>
-                            <br/>
-
-                            <p>Количество ключевых фраз и уникальных объявлений до 75.
-                                Настройка РК Яндекс Директ или Google Adwords
-                                Сопровождение и Установка Я.Метрики (+ВебВизор),<br/>
-                                Лэндинг страничка и 2 недели сопровождения в подарок!</p><br/>
-                            <a href="javascript:void(0)" class="btn btn-rectangle-sm" role="button">Заказать</a>
-                        </div>
+                    <ul class="pricing__feature-list">
+                        <li class="pricing__feature">Создание и настройка или реанимация рекламной кампании Яндекс
+                            Директ или Google Adwords
+                        </li>
+                        <li class="pricing__feature">Количество ключевых фраз и уникальных объявлений до 45</li>
+                        <li class="pricing__feature">Сопровождение 7 дней в подарок!</li>
+                    </ul>
+                    <div class="pricing__button-wrapper">
+                        <button class="btn btn-default-lg pricing__action">Заказать</button>
                     </div>
                 </div>
-                <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h3 class="text-uppercase">Макси</h3>
-                            <small>Для крупных проектов</small>
-                            <br/>
 
-                            <p>Количество ключевых фраз и уникальных объявлений до 75.
-                                Настройка РК Яндекс Директ и Google Adwords
-                                Сопровождение и Установка Я.Метрики (+ВебВизор).<br/>
-                                Месяц сопровождения в подарок.<br/>
-                                Лэндинг страница с персональным дизайном в подарок!</p>
-                            <a href="javascript:void(0)" class="btn btn-rectangle-sm" role="button">Заказать</a>
-                        </div>
+                <div class="pricing__item">
+                    <div class="icon"><i class="fa fa-car"></i></div>
+                    <h3 class="pricing__title">Оптима</h3>
+                    <h4 class="pricing__sentence">Для среднего бизнеса</h4>
+
+                    <ul class="pricing__feature-list">
+                        <li class="pricing__feature">Настройка РК Яндекс Директ или Google Adwords</li>
+                        <li class="pricing__feature">Количество ключевых фраз и уникальных объявлений до 75</li>
+                        <li class="pricing__feature">Сопровождение и Установка Я.Метрики (+ВебВизор)</li>
+                        <li class="pricing__feature">Лэндинг страничка и 2 недели сопровождения в подарок!</li>
+                    </ul>
+                    <div class="pricing__button-wrapper">
+                        <button class="btn btn-default-lg pricing__action">Заказать</button>
                     </div>
+                </div>
 
+                <div class="pricing__item">
+                    <div class="icon"><i class="fa fa-rocket"></i></div>
+                    <h3 class="pricing__title">Макси</h3>
+                    <h4 class="pricing__sentence">Для крупных проектов</h4>
+
+                    <ul class="pricing__feature-list">
+                        <li class="pricing__feature">Настройка РК Яндекс Директ или Google Adwords</li>
+                        <li class="pricing__feature">Количество ключевых фраз и уникальных объявлений до 75</li>
+                        <li class="pricing__feature">Сопровождение и Установка Я.Метрики (+ВебВизор)</li>
+                        <li class="pricing__feature">Месяц сопровождения в подарок!</li>
+                        <li class="pricing__feature"> Лэндинг страница с персональным дизайном в подарок!</li>
+                    </ul>
+                    <div class="pricing__button-wrapper">
+                        <button class="btn btn-default-lg pricing__action">Заказать</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="container text-center" id="work">
-        <h1 class="text-uppercase">Схема работы</h1>
+        <h1 class="text-uppercase">Как мы работаем</h1>
         <hr class="subtitle-divider"/>
-        <ol class="list-work2">
+        <ol class="list-work">
             <li>
-                <p>Обсуждаем все вопросы по заказу (встреча, скайп, телефон)</p>
+                <p>Вы оставляете заявку</p>
             </li>
             <li>
-                <p>Заполняете brief на услугу и оплачиваете 30%</p>
+                <p>С Вами связывается наш менеджер</p>
             </li>
             <li>
-                <p>Выполняем работу в полном обьеме и утверждаем ее с Вами</p>
+                <p>Вместе формируем задачи и цели</p>
             </li>
             <li>
-                <p>Утверждаете работу и оплачиваете остаток</p>
+                <p>Мы проводим анализ рынка и разрабатываем эффективную стратегию</p>
             </li>
             <li>
-                <p>Дальнейшие консультации бесплатно</p>
+                <p>Утверждаем выбранный курс с Вами</p>
+            </li>
+            <li>
+                <p>Начинаем работу</p>
             </li>
         </ol>
         <p>(схему можно подстроить под Вас при необходимости)</p>
@@ -189,7 +292,7 @@
             <h1 class="text-uppercase ">Наша команда</h1>
             <hr class="subtitle-divider"/>
             <ul class="list-inline ">
-                <li class=" col-xs-12 col-sm-6">
+                <li class="col-xs-12 col-sm-6">
                     <img class="img-circle" src="img/characters/andrey.jpg" alt="Andrey Pavlov"
                          width="128" height="128"/>
 
@@ -210,8 +313,8 @@
 
 <footer>
     <div class="container">
-        <ul class="list-inline text-center footer-contact-list col-xs-12 col-md-9">
-            <li class="text-center col-xs-12 col-sm-4">
+        <ul class="list-inline text-center footer-contact-list">
+            <li class="text-center col-xs-12 col-sm-3">
                 <i class="fa fa-phone fa-4x"></i>
                 <address>
                     <p><strong>Телефон:</strong><br/>
@@ -219,15 +322,25 @@
                     </p>
                 </address>
             </li>
-            <li class="text-center col-xs-12 col-sm-4">
+            <li class="text-center col-xs-12 col-sm-3">
                 <address>
                     <i class="fa fa-envelope fa-4x"></i>
+
                     <p><strong>Почта:</strong><br/>
                         azamatus@gmail.com
                     </p>
                 </address>
             </li>
-            <li class="text-left col-xs-12 col-sm-4">
+            <li class="text-center col-xs-12 col-sm-3">
+                <address>
+                    <i class="fa fa-vk fa-4x"></i>
+
+                    <p><strong>Вконтакте:</strong><br/>
+                        <a href="https://vk.com/joindarksidee">vk.com/joindarksidee</a>
+                    </p>
+                </address>
+            </li>
+            <li class="text-left col-xs-12 col-sm-3">
                 <div class="col-xs-offset-4 col-sm-offset-4">
                     <p class="footer-menu-header">Меню</p>
                     <ul class="list-unstyled footer-menu">
@@ -240,12 +353,6 @@
                 </div>
             </li>
         </ul>
-        <div class="col-xs-12 col-md-3 text-center container">
-            <ul class="list-inline icon-list col-xs-12 social-icons icon-circle icon-zoom">
-                <li> <a href="#"><i class="fa fa-vk"></i></a></li>
-                <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-            </ul>
-        </div>
         <div class="col-xs-12 col-lg-12">
             <p>© <%= new Date().getFullYear() %> <%= title %></p>
         </div>
@@ -280,7 +387,7 @@
                         <textarea id="inputComment" placeholder="Сообщение" tabindex="5" required></textarea>
                     </fieldset>
                     <button type="submit" id="inputSubmit" data-loading-text="Отправляется"
-                            class="btn btn-rectangle-lg">Отправить
+                            class="btn btn-default-lg">Отправить
                     </button>
                 </form>
             </div>
@@ -293,7 +400,7 @@
         integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
         crossorigin="anonymous"></script>
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter33537228 = new Ya.Metrika({ id:33537228, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/33537228" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript"> (function (d, w, c){(w[c] = w[c] || []).push(function (){try {w.yaCounter33537228 = new Ya.Metrika({id: 33537228,clickmap: true,trackLinks: true,accurateTrackBounce: true,webvisor: true});} catch (e) {}});var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function (){n.parentNode.insertBefore(s, n);};s.type = "text/javascript";s.async = true;s.src = "https://mc.yandex.ru/metrika/watch.js";if (w.opera == "[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else {f();}})(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/33537228" style="position:absolute; left:-9999px;" alt=""/></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <script src="js/main.min.js"></script>
 </body>
