@@ -31,6 +31,8 @@
         $('.review-slider').slick({
             dots: true,
             infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
             speed: 300,
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -43,6 +45,10 @@
                     }
                 }
             ]
+        });
+
+        $('.no-touch').on('touchstart', function (){
+            $(this).removeClass('no-touch');
         });
 
         $('.btn').on('click', function (){

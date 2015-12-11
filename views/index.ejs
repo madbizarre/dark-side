@@ -16,7 +16,7 @@
           integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
           crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="css/style.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="icon" href="/favicon.ico"/>
     <!--[if lt IE 9]>
@@ -289,13 +289,13 @@
     </section>
 
     <section class="white text-center" id="review">
-        <div class="container">
+        <div class="container no-touch">
             <h1 class="text-uppercase ">Отзывы</h1>
             <hr class="subtitle-divider"/>
             <div class="review-slider"><% sendReviews.forEach(function(item){ %>
                 <div class="review_item">
                     <figure>
-                        <img class="img-rounded" src="<%= item.img %>" width="480"/>
+                        <img class="img-rounded" src="<%= item.img %>"/>
                         <figcaption>
                             <h2><%= item.title %></h2>
                             <ul class="list-unstyled"> <% item.list.forEach(function(li){ %>

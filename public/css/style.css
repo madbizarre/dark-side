@@ -554,53 +554,48 @@ footer {
   #review .slick-prev:before, #review .slick-next:before {
     color: #ccc; }
   #review img {
-    display: inline; }
+    display: inline;
+    width: 100%;
+    max-width: 460px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
   #review .review_item:active, #review .review_item:focus {
     outline: none !important; }
-  #review .review_item figure {
+  #review .no-touch .review_item figure {
     position: relative;
     display: inline-block;
     background: #eee;
     overflow: hidden; }
-    #review .review_item figure figcaption {
+    #review .no-touch .review_item figure figcaption {
       position: absolute;
       top: 50%;
       left: 0;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
       transform: translateY(-50%);
       width: 100%;
       max-height: 100%;
       padding: 15px;
       opacity: 0;
       overflow: auto;
-      -webkit-overflow-scrolling: touch;
       -webkit-transition: opacity 0.5s ease-in-out;
       -moz-transition: opacity 0.5s ease-in-out;
       -ms-transition: opacity 0.5s ease-in-out;
       -o-transition: opacity 0.5s ease-in-out;
       transition: opacity 0.5s ease-in-out; }
-      #review .review_item figure figcaption::-webkit-scrollbar {
-        width: 4px; }
-      #review .review_item figure figcaption::-webkit-scrollbar-track {
-        background: transparent; }
-      #review .review_item figure figcaption::-webkit-scrollbar-thumb {
-        background: #bbb; }
-      #review .review_item figure figcaption::-webkit-scrollbar-thumb:hover {
-        background: #999; }
-    #review .review_item figure img {
-      max-width: 100%;
-      -webkit-transition: all 0.5s ease-in-out;
-      -moz-transition: all 0.5s ease-in-out;
-      -ms-transition: all 0.5s ease-in-out;
-      -o-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out; }
-    #review .review_item figure:hover figcaption {
+    #review .no-touch .review_item figure:hover figcaption {
       opacity: 1;
       -webkit-transition: opacity 0.5s ease-in-out;
       -moz-transition: opacity 0.5s ease-in-out;
       -ms-transition: opacity 0.5s ease-in-out;
       -o-transition: opacity 0.5s ease-in-out;
       transition: opacity 0.5s ease-in-out; }
-    #review .review_item figure:hover img {
+    #review .no-touch .review_item figure:hover img {
       -webkit-filter: blur(50px) saturate(4) opacity(0.5);
       filter: blur(50px) saturate(4) opacity(0.5);
       -webkit-transition: all 0.5s ease-in-out;
