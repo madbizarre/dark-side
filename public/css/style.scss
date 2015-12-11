@@ -693,3 +693,57 @@ footer {
     opacity: 1 !important;
   }
 }
+
+#review {
+  overflow-x:  hidden;
+  .slick-prev:before, .slick-next:before{
+    color: #ccc;
+  }
+  img {
+    display: inline;
+  }
+
+  .review_item{
+    &:active, &:focus {
+      outline: none !important;
+    }
+    figure {
+      position: relative;
+      display: inline-block;
+      background: #eee;
+      overflow: hidden;
+      figcaption {
+        position: absolute;
+        top: 50%; left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        max-height: 100%;
+        padding: 15px;
+        opacity: 0;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        @include transition(opacity .5s ease-in-out);
+        &::-webkit-scrollbar { width: 4px; }
+        &::-webkit-scrollbar-track { background: transparent; }
+        &::-webkit-scrollbar-thumb { background: #bbb; }
+        &::-webkit-scrollbar-thumb:hover { background: #999; }
+      }
+      img {
+        max-width: 100%;
+        @include transition(all .5s ease-in-out);
+      }
+      &:hover {
+        figcaption {
+          opacity: 1;
+          @include transition(opacity .5s ease-in-out);
+        }
+        img {
+          -webkit-filter: blur(50px) saturate(4) opacity(0.5);
+          filter: blur(50px) saturate(4) opacity(0.5);
+          @include transition(all .5s ease-in-out);
+        }
+      }
+    }
+  }
+
+}

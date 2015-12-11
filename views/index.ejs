@@ -10,6 +10,8 @@
     <meta name="keywords" content="seo продвижение сайта яндекс.директ директ adwords директолог direct">
     <meta property="og:image" content="http://joindarkside.ru/img/favicon.png"/>
     <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
           integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
           crossorigin="anonymous">
@@ -286,6 +288,26 @@
         <p>(схему можно подстроить под Вас при необходимости)</p>
     </section>
 
+    <section class="white text-center" id="review">
+        <div class="container">
+            <h1 class="text-uppercase ">Отзывы</h1>
+            <hr class="subtitle-divider"/>
+            <div class="review-slider"><% sendReviews.forEach(function(item){ %>
+                <div class="review_item">
+                    <figure>
+                        <img class="img-rounded" src="<%= item.img %>" width="480"/>
+                        <figcaption>
+                            <h2><%= item.title %></h2>
+                            <ul class="list-unstyled"> <% item.list.forEach(function(li){ %>
+                                <li><%= li %></li> <% }); %> <% if (item.href) { %>
+                                <li><a href="<%= item.href %>">Ссылка на отзыв</a></li> <% } %>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div><% }); %>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer>
@@ -304,7 +326,7 @@
                     <i class="fa fa-envelope fa-4x"></i>
 
                     <p><strong>Почта:</strong><br/>
-                        azamatus@gmail.com
+                        <a href="mailto:azamatus@gmail.com">azamatus@gmail.com</a>
                     </p>
                 </address>
             </li>
@@ -325,7 +347,7 @@
                         <li><a href="#principles">Наши принципы</a></li>
                         <li><a href="#tariffs">Тарифы</a></li>
                         <li><a href="#work">Как мы работаем</a></li>
-                        <li><a href="#team">Наша команда</a></li>
+                        <li><a href="#rewiew">Отзывы</a></li>
                     </ul>
                 </div>
             </li>
@@ -373,6 +395,7 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
         integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
         crossorigin="anonymous"></script>
