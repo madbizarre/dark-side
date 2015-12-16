@@ -11,7 +11,7 @@
 -------------------------------------------------- */
 body {
   color: #5a5a5a;
-  background-color: #ededed;
+  background-color: #ECF0F1;
   font-family: 'Open Sans'; }
 
 section {
@@ -43,7 +43,7 @@ hr {
   padding: 1em 2.5em; }
 
 .gray {
-  background-color: #ededed; }
+  background-color: #DADFE1; }
 
 .white {
   background-color: #fefefe; }
@@ -84,52 +84,24 @@ hr {
 -------------------------------------------------- */
 .intro {
   width: 100%;
-  height: 75vh;
-  min-height: 530px;
-  color: #FFC107;
-  background: url(../img/intro2.jpg) no-repeat 50% 55%;
+  min-height: 100%;
+  color: #F7CA18;
+  background: url(../img/intro.jpg) no-repeat 50% 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  .intro .intro-bg, .intro .intro-container {
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    height: 75vh;
-    min-height: 530px;
-    width: 100%;
-    position: absolute; }
-  .intro .intro-bg {
-    z-index: 98;
-    background: url(../img/intro2.jpg) no-repeat 50% 55%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    filter: blur(5px);
-    filter: url(../img/blur.svg#blur);
-    overflow: hidden;
-    padding: 10px 10px; }
-  .intro .intro-container {
-    z-index: 99;
-    overflow: hidden;
-    padding: 7vh 0; }
-  .intro h1 {
-    font-family: 'Open Sans';
-    padding-top: 150px;
-    text-shadow: 2px 2px 10px #CF212F, 0 0 5rem #021425;
-    z-index: 99; }
   .intro .title {
     font-family: 'Bitter', normal;
     font-size: 3rem;
     margin-top: 50px;
     text-shadow: 1px 1px 1px black, 0 0 3px black; }
-  .intro .row {
-    margin-bottom: 25px; }
+
+.intro-container {
+  background-color: rgba(25, 181, 254, 0.15);
+  height: 100%;
+  width: 100%;
+  padding: 7vh 0; }
 
 .banner {
   position: relative;
@@ -202,7 +174,7 @@ hr {
 -------------------------------------------------- */
 .subtitle-divider {
   width: 20%;
-  border-top: 1px solid #DDDDDD;
+  border-top: 1px solid #ABB7B7;
   padding-bottom: 25px; }
 
 #tariffs .pricing .pricing__sentence {
@@ -247,7 +219,7 @@ hr {
       padding-top: 2rem;
       font-size: 3rem; }
     .list-work li:nth-child(even) {
-      background: #ccc; }
+      background: #DADFE1; }
     .list-work li:before {
       position: absolute;
       font-size: 12rem;
@@ -272,8 +244,11 @@ hr {
 /* FOOTER
 -------------------------------------------------- */
 footer {
-  background-color: #021425;
+  background-color: #22313F;
   padding: 40px 0; }
+
+.footer-c {
+  color: black; }
 
 .footer-contact-list {
   color: #f5f5f5; }
@@ -349,11 +324,6 @@ footer {
   .list-work li {
     padding: 30px 10px; } }
 @media (max-width: 768px) and (orientation: landscape) {
-  .intro {
-    max-height: 100vmax; }
-    .intro .intro-container {
-      padding: 0; }
-
   .banner {
     width: 250px; }
     .banner .line {
@@ -380,16 +350,17 @@ footer {
       -ms-transform: skew(0deg, 20deg);
       -o-transform: skew(0deg, 20deg);
       transform: skew(0deg, 20deg); } }
-@media (max-width: 1200px) {
+@media (max-width: 670px) {
   .intro {
-    height: 100vh; }
-    .intro .intro-bg, .intro .intro-container {
-      height: 100vh; } }
-@media (max-width: 920px) {
-  .intro {
-    max-height: 800px; }
-    .intro .intro-bg, .intro .intro-container {
-      max-height: 800px; } }
+    height: 100%; }
+    .intro .row {
+      margin-bottom: 0; } }
+@media (min-width: 1200px) {
+  .intro .row {
+    margin-bottom: 25px; } }
+@media (orientation: portrait) {
+  .intro .row {
+    margin-bottom: 25px; } }
 .pricing {
   display: -webkit-flex;
   display: flex;
@@ -437,14 +408,6 @@ footer {
   .pricing__title {
     font-size: 1em;
     margin: 1.5em 0 0; }
-  .pricing .icon {
-    font-size: 2.5em;
-    color: #8b909d;
-    -webkit-transition: color 0.3s;
-    -moz-transition: color 0.3s;
-    -ms-transition: color 0.3s;
-    -o-transition: color 0.3s;
-    transition: color 0.3s; }
   .pricing__item:hover .icon {
     color: #E03E3E; }
   .pricing__price {
@@ -468,11 +431,6 @@ footer {
     -moz-animation-timing-function: ease-in-out;
     -o-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out; }
-  .pricing__item:hover .pricing__anim--2 {
-    -webkit-animation-delay: .05s;
-    -moz-animation-delay: .05s;
-    -o-animation-delay: .05s;
-    animation-delay: .05s; }
   .pricing__sentence {
     font-weight: bold;
     margin: 0 0 1em 0;
@@ -495,6 +453,36 @@ footer {
     color: white; }
   .pricing__button-wrapper {
     margin-top: auto; }
+
+.icon {
+  font-size: 2.5em;
+  color: #8b909d;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s; }
+
+#special-offer .pricing__feature-list {
+  color: #5A5A5A;
+  font-size: 1em; }
+#special-offer .icon {
+  color: #5A5A5A; }
+#special-offer .pricing__title {
+  font-size: 1.4em; }
+#special-offer .row:hover .icon {
+  color: #E03E3E; }
+#special-offer .pricing__anim {
+  display: inline-block;
+  position: relative; }
+#special-offer .row:hover .pricing__anim {
+  -webkit-animation: moveUp .5s forwards;
+  -o-animation: moveUp .5s forwards;
+  animation: moveUp .5s forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out; }
 
 @-webkit-keyframes moveUp {
   50% {

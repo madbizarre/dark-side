@@ -85,15 +85,15 @@
 /* VARIABLES
 -------------------------------------------------- */
 $color1: #CF212F;
-$color2: #021425;
-$color3: #FFC107;
+$color2: #22313F;
+$color3: #F7CA18;
 
 /* COMMON TAGS AND CLASES
 -------------------------------------------------- */
 
 body {
   color: #5a5a5a;
-  background-color: #ededed;
+  background-color: #ECF0F1;
   font-family: 'Open Sans';
 }
 
@@ -128,7 +128,7 @@ hr {
 }
 
 .gray {
-  background-color: #ededed;
+  background-color: #DADFE1;
 }
 
 .white {
@@ -173,55 +173,25 @@ hr {
 
 /* INTRO
 -------------------------------------------------- */
-$headerHeight: 75vh;
 .intro {
   width: 100%;
-  height: $headerHeight;
-  min-height: 530px;
+  min-height: 100%;
   color: $color3;
-  background: url(../img/intro2.jpg) no-repeat 50% 55%;
+  background: url(../img/intro.jpg) no-repeat 50% 0;
   @include background-size(cover);
-  .intro-bg, .intro-container {
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    height: $headerHeight;
-    min-height: 530px;
-    width: 100%;
-    position: absolute;
-  }
-  .intro-bg {
-    z-index: 98;
-    background: url(../img/intro2.jpg) no-repeat 50% 55%;
-    @include background-size(cover);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    filter: blur(5px);
-    filter: url(../img/blur.svg#blur);
-    overflow: hidden;
-    padding: 10px 10px;
-  }
-  .intro-container {
-    z-index: 99;
-    overflow: hidden;
-    padding: 7vh 0;
-  }
-  h1 {
-    font-family: 'Open Sans';
-    padding-top: 150px;
-    text-shadow: 2px 2px 10px $color1, 0 0 5rem $color2;
-    z-index: 99;
-  }
   .title {
     font-family: 'Bitter', normal;
     font-size: 3rem;
     margin-top: 50px;
     text-shadow: 1px 1px 1px black, 0 0 3px black;
   }
-  .row {
-    margin-bottom: 25px;
-  }
+}
+
+.intro-container {
+  background-color: rgba(25, 181, 254, 0.15);
+  height: 100%;
+  width: 100%;
+  padding: 7vh 0;
 }
 
 .banner {
@@ -288,7 +258,7 @@ $headerHeight: 75vh;
 
 .subtitle-divider {
   width: 20%;
-  border-top: 1px solid #DDDDDD;
+  border-top: 1px solid #ABB7B7;
   padding-bottom: 25px;
 }
 
@@ -338,7 +308,7 @@ $headerHeight: 75vh;
       font-size: 3rem;
     }
     &:nth-child(even) {
-      background: #ccc;
+      background: #DADFE1;
     }
     &:before {
       position: absolute;
@@ -378,8 +348,12 @@ $headerHeight: 75vh;
 /* FOOTER
 -------------------------------------------------- */
 footer {
-  background-color: $color2;
+  background-color: #22313F;
   padding: 40px 0;
+}
+
+.footer-c {
+  color: black;
 }
 
 .footer-contact-list {
@@ -479,12 +453,6 @@ footer {
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
-  .intro {
-    max-height: 100vmax;
-    .intro-container {
-      padding: 0;
-    }
-  }
   .banner {
     width: 250px;
     .line {
@@ -517,21 +485,24 @@ footer {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 670px) {
   .intro {
-    height: 100vh;
-    .intro-bg, .intro-container {
-      height: 100vh;
+    height: 100%;
+    .row {
+      margin-bottom: 0;
     }
   }
 }
 
-@media (max-width: 920px) {
-  .intro {
-    max-height: 800px;
-    .intro-bg, .intro-container {
-      max-height: 800px;
-    }
+@media (min-width: 1200px) {
+  .intro .row {
+    margin-bottom: 25px;
+  }
+}
+
+@media (orientation: portrait) {
+  .intro .row {
+    margin-bottom: 25px;
   }
 }
 
@@ -576,11 +547,7 @@ footer {
     font-size: 1em;
     margin: 1.5em 0 0;
   }
-  .icon {
-    font-size: 2.5em;
-    color: #8b909d;
-    @include transition(color .3s);
-  }
+
   &__item:hover .icon {
     color: #E03E3E;
   }
@@ -610,12 +577,6 @@ footer {
     -o-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
   }
-  &__item:hover &__anim--2 {
-    -webkit-animation-delay: .05s;
-    -moz-animation-delay: .05s;
-    -o-animation-delay: .05s;
-    animation-delay: .05s;
-  }
   &__sentence {
     font-weight: bold;
     margin: 0 0 1em 0;
@@ -644,6 +605,43 @@ footer {
   &__button-wrapper {
     margin-top: auto;
   }
+}
+
+.icon {
+  font-size: 2.5em;
+  color: #8b909d;
+  @include transition(color .3s);
+}
+
+#special-offer {
+  .pricing__feature-list {
+    color: #5A5A5A;
+    font-size: 1em;
+  }
+  .icon {
+    color: #5A5A5A;
+  }
+  .pricing__title {
+    font-size: 1.4em;
+  }
+
+  .row:hover .icon {
+    color: #E03E3E;
+  }
+  .pricing__anim {
+    display: inline-block;
+    position: relative;
+  }
+  .row:hover .pricing__anim {
+    -webkit-animation: moveUp .5s forwards;
+    -o-animation: moveUp .5s forwards;
+    animation: moveUp .5s forwards;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
 }
 
 @-webkit-keyframes moveUp {

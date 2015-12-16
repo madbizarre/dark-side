@@ -16,7 +16,7 @@
           integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
           crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/style.min.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="icon" href="/favicon.ico"/>
     <!--[if lt IE 9]>
@@ -49,8 +49,7 @@
     </nav>
 </div>
 
-<header class="intro text-center white" id="intro" role="presentation">
-    <div class="intro-bg"></div>
+<header class="intro text-center" id="intro" role="presentation">
     <div class="intro-container">
         <div class="container text-center">
             <div class="row">
@@ -81,6 +80,44 @@
 </header>
 
 <main>
+    <section class="container text-center" id="special-offer">
+        <h1 class="text-uppercase">Уникальное предложение!</h1>
+        <hr class="subtitle-divider"/>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="icon"><i class="fa fa-star-o"></i></div>
+                <h3 class="pricing__title">Тест ниши вашего бизнеса</h3>
+
+                <div class="pricing__price">
+                        <span class="pricing__anim pricing__anim--1">
+								23 000<span class="pricing__currency"><i class="fa fa-rub fa-1"></i></span>
+                        </span>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h4>Услуги</h4>
+                <ul class="pricing__feature-list">
+                    <li class="pricing__feature">Структурирование запросов</li>
+                    <li class="pricing__feature">Анализ целевой аудитории</li>
+                    <li class="pricing__feature">Дизайн и разработка Landing&nbsp;Page</li>
+                    <li class="pricing__feature">Создание рекламной кампании в&nbsp;Директ&nbsp;и&nbsp;Адвордс</li>
+                    <li class="pricing__feature">Анализ данных</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h4>Результат</h4>
+                <ul class="pricing__feature-list">
+                    <li class="pricing__feature">Быстрый старт продаж</li>
+                    <li class="pricing__feature">Анализ спроса на ваше предложение</li>
+                    <li class="pricing__feature">Лучшее предложение по эффективность/качество</li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="btn btn-default-lg">Узнать подробности</button>
+    </section>
+
     <section class="white" id="adv-tariffs">
         <div class="container text-center">
             <h1 class="text-uppercase">Обращайся, если Тебе нужны:</h1>
@@ -292,19 +329,25 @@
         <div class="container no-touch">
             <h1 class="text-uppercase">Наши работы</h1>
             <hr class="subtitle-divider"/>
-            <div class="review-slider"><% sendReviews.forEach(function(item){ %>
+            <div class="review-slider">
+                <% sendReviews.forEach(function(item){ %>
                 <div class="review_item">
                     <figure>
                         <img class="img-rounded" src="<%= item.img %>"/>
                         <figcaption>
                             <h2><%= item.title %></h2>
-                            <ul class="list-unstyled"> <% item.list.forEach(function(li){ %>
-                                <li><%= li %></li> <% }); %> <% if (item.href) { %>
-                                <li><a href="<%= item.href %>">Ссылка на отзыв</a></li> <% } %>
+                            <ul class="list-unstyled">
+                                <% item.list.forEach(function(li){ %>
+                                <li><%= li %></li>
+                                <% }); %>
+                                <% if (item.href) { %>
+                                <li><a href="<%= item.href %>">Ссылка на отзыв</a></li>
+                                <% } %>
                             </ul>
                         </figcaption>
                     </figure>
-                </div><% }); %>
+                </div>
+                <% }); %>
             </div>
         </div>
     </section>
@@ -353,7 +396,7 @@
             </li>
         </ul>
         <div class="col-xs-12 col-lg-12">
-            <p>© <%= new Date().getFullYear() %> <%= title %></p>
+            <p class="footer-c">© <%= new Date().getFullYear() %> <%= title %></p>
         </div>
     </div>
 </footer>
