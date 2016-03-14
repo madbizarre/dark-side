@@ -20,6 +20,13 @@ section {
 hr {
   border-top: 1px solid #000; }
 
+.cross {
+  background: transparent url(../img/cross.svg) no-repeat;
+  font-size: 1.75em;
+  width: 100px;
+  height: 40px;
+  margin: 20px auto 0; }
+
 .btn:focus, .btn:active {
   outline: none !important; }
 
